@@ -5,7 +5,9 @@
         "choice2" : "Nov 28",
         "choice3" : "May 2",
         "choice4" : "Sep 22",
-        "answer" : 1
+        "answer" : 1,
+        "image": "images/ssis-header.png"
+        
 
     },
     {
@@ -14,7 +16,8 @@
         "choice2" : "Tamil",
         "choice3" : "Telugu",
         "choice4" : "Malayalam",
-        "answer" : 4
+        "answer" : 4,
+        "image": "images/sample1.png"
 
     },
     {
@@ -23,7 +26,8 @@
         "choice2" : "Prayag. Haridwar, Ujjain,. Nasik",
         "choice3" : "Rameshwaram. Purl, Badrinath. Dwarika",
         "choice4" : "Chittakoot, Ujjain, Prayag,'Haridwar",
-        "answer" : 2
+        "answer" : 2,
+        "image": "images/sample1.png"
 
     },
     {
@@ -32,7 +36,8 @@
         "choice2" : "Hinduism",
         "choice3" : "Buddhism",
         "choice4" : "Jainism",
-        "answer" : 4
+        "answer" : 4,
+        "image": "images/sample1.png"
 
     },
     {
@@ -41,7 +46,8 @@
         "choice2" : "Oct 14",
         "choice3" : "Nov 15",
         "choice4" : "Dec 2",
-        "answer" : 2
+        "answer" : 2,
+        "image": "images/sample1.png"
 
     },
     {
