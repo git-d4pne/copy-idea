@@ -125,3 +125,34 @@ input {
 input::placeholder {
   color: #aaa;
 }
+
+.button-container {
+  text-align: right; /* Aligns text and inline elements to the right */
+  margin-top: 1rem; /* Optional: Adds some space above the button */
+}
+
+/* Your existing button styles */
+#next-btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #000000;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #56a5eb;
+}
+
+#next-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#next-btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}

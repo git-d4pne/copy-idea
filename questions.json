@@ -1,6 +1,6 @@
 [
     {
-        "question" : "The International Literacy Day is observed on ?",
+        "question" : "Test Question 1",
         "choice1" : "Sep 8",
         "choice2" : "Nov 28",
         "choice3" : "May 2",
@@ -9,7 +9,7 @@
 
     },
     {
-        "question" : "The language of Lakshadweep. a Union Territory of India, is ?",
+        "question" : "Test Question 2",
         "choice1" : "Hindi",
         "choice2" : "Tamil",
         "choice3" : "Telugu",
@@ -18,7 +18,7 @@
 
     },
     {
-        "question" : "In which group of places the Kumbha Mela is held every twelve years ?",
+        "question" : "Test Question 3",
         "choice1" : "Ujjain. Purl; Prayag. Haridwar",
         "choice2" : "Prayag. Haridwar, Ujjain,. Nasik",
         "choice3" : "Rameshwaram. Purl, Badrinath. Dwarika",
@@ -27,7 +27,7 @@
 
     },
     {
-        "question" : "Bahubali festival is related to ?",
+        "question" : "Test Question 4",
         "choice1" : "Islam",
         "choice2" : "Hinduism",
         "choice3" : "Buddhism",
@@ -36,7 +36,7 @@
 
     },
     {
-        "question" : "Which day is observed as the World Standards  Day ?",
+        "question" : "Test Question 5",
         "choice1" : "Jun 26",
         "choice2" : "Oct 14",
         "choice3" : "Nov 15",
