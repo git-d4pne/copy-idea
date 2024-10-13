@@ -1,10 +1,10 @@
 [
     {
         "question" : "Test Question 1",
-        "choice1" : "Sep 8",
-        "choice2" : "Nov 28",
-        "choice3" : "May 2",
-        "choice4" : "Sep 22",
+        "choice1" : "images/sample1.png",
+        "choice2" : "images/sample1.png",
+        "choice3" : "images/sample1.png",
+        "choice4" : "images/sample1.png",
         "answer" : 1,
         "image": "images/ssis-header.png"
         
@@ -12,20 +12,19 @@
     },
     {
         "question" : "Test Question 2",
-        "choice1" : "Hindi",
-        "choice2" : "Tamil",
-        "choice3" : "Telugu",
-        "choice4" : "Malayalam",
+        "choice1" : "images/ssis-header.png",
+        "choice2" : "images/ssis-header.png",
+        "choice3" : "images/ssis-header.png",
+        "choice4" : "images/ssis-header.png",
         "answer" : 4,
         "image": "images/sample1.png"
 
     },
     {
         "question" : "Test Question 3",
-        "choice1" : "Ujjain. Purl; Prayag. Haridwar",
-        "choice2" : "Prayag. Haridwar, Ujjain,. Nasik",
-        "choice3" : "Rameshwaram. Purl, Badrinath. Dwarika",
-        "choice4" : "Chittakoot, Ujjain, Prayag,'Haridwar",
+        "choice1" : "images/sample1.png",
+        "choice2" : "images/sample1.png",
+        "choice3" : "images/sample1.png",
         "answer" : 2,
         "image": "images/sample1.png"
 

@@ -24,6 +24,7 @@ fetch('questions.json')
         question: loadedQuestion.question,
       };
 
+      // Support for either text or image in the choices
       const answerChoices = [
         loadedQuestion.choice1,
         loadedQuestion.choice2,
@@ -77,7 +78,7 @@ getNewQuestion = () => {
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
-  // Display the image if it exists
+  // Display the question image if it exists
   if (currentQuestion.image) {
     questionImage.src = currentQuestion.image; // Set the image source
     questionImage.style.display = 'block'; // Show the image
@@ -85,10 +86,21 @@ getNewQuestion = () => {
     questionImage.style.display = 'none'; // Hide the image if no image is available
   }
 
+  // Handle rendering either text or image choices
   choices.forEach((choice) => {
     const number = choice.dataset['number'];
-    choice.innerText = currentQuestion['choice' + number];
+    const choiceContent = currentQuestion['choice' + number];
+  
+    if (isImageUrl(choiceContent)) {
+      // Apply special image class if the choice is an image
+      choice.innerHTML = `<img src="${choiceContent}" alt="Choice Image" class="choice-image">`;
+      choice.parentElement.classList.add('image-choice'); // Add a special class to the container
+    } else {
+      choice.innerText = choiceContent;
+      choice.parentElement.classList.remove('image-choice'); // Ensure the class is removed for text choices
+    }
   });
+  
 
   availableQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
@@ -152,6 +164,11 @@ const showPopup = (message, result) => {
     popup.classList.remove('visible');
     popup.classList.add('hidden');
   }, 3000);
+};
+
+// Helper function to check if the content is an image URL
+const isImageUrl = (url) => {
+  return /\.(jpeg|jpg|gif|png)$/.test(url);
 };
 
 // Add event listener for the Next Question button
