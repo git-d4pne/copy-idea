@@ -146,7 +146,7 @@ input::placeholder {
 
 #next-btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 2.4rem 2.4rem 0 rgb(86, 185, 235);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -156,3 +156,35 @@ input::placeholder {
   box-shadow: none;
   transform: none;
 }
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem; /* Adjusted padding for a balanced look */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  z-index: 1000; /* Ensure it is above other elements */
+  display: none; /* Start hidden */
+  font-size: 4rem; /* Increased font size for visibility */
+  font-weight: bold; /* Bold text for emphasis */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  text-align: center; /* Center text */
+  width: 30rem; /* Adjust width as needed */
+  min-height: 10rem; /* Ensure enough height for two lines */
+  height: auto; /* Allow height to adjust based on content */
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+#popup.hidden {
+  display: none; /* Hide the pop-up */
+}
+
+#popup.visible {
+  display: block; /* Show the pop-up */
+}
+
+
+
+
